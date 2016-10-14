@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="allNumbers">Todos os números possíveis já foram sorteados</string>
+    <string name="drawn">Sorteados</string>
+    <string name="maxNumber">Limite Superior</string>
+    <string name="app_name">Sorte.io</string>
+    <string name="minNumber">Limite Inferior</string>
+    <string name="noInferiorLimit">Insira Limite Inferior</string>
+    <string name="noLimits">Insira Limite Inferior e Superior</string>
+    <string name="noSuperiorLimit">Insira Limite Superior</string>
+    <string name="raffe">Sortear</string>
+    <string name="reset">Limpar Dados</string>
+    <string name="withoutRepetition">Sem Repetição</string>
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "510551905329",
+    "firebase_url": "https://sorteio-8bc1e.firebaseio.com",
+    "project_id": "sorteio-8bc1e",
+    "storage_bucket": "sorteio-8bc1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510551905329:android:c409ac1015ed0d7b",
+        "android_client_info": {
+          "package_name": "br.com.mariorsjr.sorteador"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510551905329-6e2f2gqmrjqj3g06ehesvvc0eil182vn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.mariorsjr.sorteador",
+            "certificate_hash": "79706975EAE0BEAEF195CC694314F4F8B1713274"
+          }
+        },
+        {
+          "client_id": "510551905329-27i0absfedtflfs276hkr76kkps1embj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4i9fFMQS3Ho48GVvkvZdopvtJVE-9NnY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510551905329-27i0absfedtflfs276hkr76kkps1embj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

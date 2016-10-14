@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Sorte.io</string>
+    <string name="minNumber">Lower Limit</string>
+    <string name="maxNumber">Upper Limit</string>
+    <string name="reset">Reset</string>
+    <string name="raffe">Raffle</string>
+    <string name="drawn">Already Drawn</string>
+    <string name="withoutRepetition">No Repetition</string>
+    <string name="allNumbers">All possible numbers were already drawn</string>
+    <string name="noLimits">Insert Lower and Upper Limit</string>
+    <string name="noSuperiorLimit">Insert Upper Limit</string>
+    <string name="noInferiorLimit">Insert Lower Limit</string>
+</resources>

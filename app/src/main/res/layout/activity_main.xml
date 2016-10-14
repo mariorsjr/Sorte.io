@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_marginBottom="26dp"
+        android:id="@+id/toolbar"
+        app:titleTextColor="@android:color/white"/>
+
+<RelativeLayout
+    android:layout_below="@+id/toolbar"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.mariorsjr.sorteador.MainActivity"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout_numbers">
+        <EditText
+            android:maxLength="10"
+            android:id="@+id/editTextMinNumber"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="@string/minNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:maxLength="10"
+            android:id="@+id/editTextMaxNumber"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="@string/maxNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!---->
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout_options"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/linearLayout_numbers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <android.support.v7.widget.SwitchCompat
+            android:text="@string/withoutRepetition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switchRepetition"
+            />
+
+        <Button
+            android:text="@string/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonReset"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+    </LinearLayout>
+
+    <TextView
+        android:focusable="false"
+        android:id="@+id/textViewDrawn"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/linearLayout_options"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/buttonDoRaffle"
+        android:text="@string/raffe"
+        android:textSize="20sp"
+        android:layout_below="@id/textViewDrawn"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <TextView
+        android:layout_marginTop="50dp"
+        android:focusable="false"
+        android:id="@+id/textViewSorteados"
+        android:text="Sorteados"
+        android:layout_below="@id/buttonDoRaffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+    <ScrollView
+        android:focusable="false"
+        android:layout_below="@+id/textViewSorteados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3">
+        <TextView
+            android:focusable="false"
+            android:id="@+id/textViewDrawnNumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+    </ScrollView>
+</RelativeLayout>
+</RelativeLayout>
