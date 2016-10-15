@@ -13,8 +13,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.google.firebase.analytics.FirebaseAnalytics;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -22,7 +20,6 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     private EditText mEditTextMinNumber, mEditTextMaxNumber;
-    private FirebaseAnalytics mFirebaseAnalytics;
     private TextView mTextViewDrawn, mTextViewDrawnNumbers;
     private Button mButtonDoRaffle, mButtonReset;
     private Random mRandom;
@@ -36,10 +33,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        // Obtain the FirebaseAnalytics instance.
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
-
+        
         Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(myToolbar);
 
